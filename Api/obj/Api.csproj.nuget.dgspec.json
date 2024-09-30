@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Владелец\\MyDotNetCoreProject\\MyApp\\MyApp.csproj": {}
+    "C:\\Users\\Владелец\\MyDotNetCoreProject\\Api\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Владелец\\MyDotNetCoreProject\\MyApp\\MyApp.csproj": {
+    "C:\\Users\\Владелец\\MyDotNetCoreProject\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Владелец\\MyDotNetCoreProject\\MyApp\\MyApp.csproj",
-        "projectName": "MyApp",
-        "projectPath": "C:\\Users\\Владелец\\MyDotNetCoreProject\\MyApp\\MyApp.csproj",
+        "projectUniqueName": "C:\\Users\\Владелец\\MyDotNetCoreProject\\Api\\Api.csproj",
+        "projectName": "Api",
+        "projectPath": "C:\\Users\\Владелец\\MyDotNetCoreProject\\Api\\Api.csproj",
         "packagesPath": "C:\\Users\\Владелец\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Владелец\\MyDotNetCoreProject\\MyApp\\obj\\",
+        "outputPath": "C:\\Users\\Владелец\\MyDotNetCoreProject\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Владелец\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Владелец\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,6 +45,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -54,6 +63,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
